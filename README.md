@@ -33,6 +33,11 @@ Example Api Setup in module.config.php
 
 ```
 return array(
+    'edpgithub' => array(
+        'base_url' => 'https://api.github.com/',
+        'timeout' => '10',
+        'api_version' => 'beta',
+    ),
     'service_manager' => array(
         'invokables' => array(
             'EdpGithub\Api\User'        => 'EdpGithub\Api\User',
