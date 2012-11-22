@@ -73,10 +73,11 @@ class Client implements ServiceManagerAwareInterface, EventManagerAwareInterface
     public function getHttpClient()
     {
         if(null === $this->httpClient) {
-           $this->httpClient = $this->getServiceManager()->get('EdpGithub\HttpClient');
+           /*$this->httpClient = $this->getServiceManager()->get('EdpGithub\HttpClient');
            $errorListener = $this->getServiceManager()->get('EdpGithub\Listener\Error');
            $eventManager = $this->httpClient->getEventManager();
            $eventManager->attachAggregate($errorListener);
+           */
 
         }
         return $this->httpClient;

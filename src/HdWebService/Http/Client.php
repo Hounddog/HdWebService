@@ -45,7 +45,6 @@ class Client implements EventManagerAwareInterface, ClientInterface
 
     protected $options;
 
-
     /**
      * Get Request
      *
